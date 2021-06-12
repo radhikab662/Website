@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo"><img src="images/1827363.png" height="60" alt="logo"></a>
+        
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Hi! <span>I am Radhika</span></h1>
+        <p class="hero__description">I am a first year under grad from DESE</p>
+        <button class="main__btn"><a href="#about">Know more</a></button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+            <img src="images/undraw_Reading_re_29f8.svg" alt="About" class="main__img--card">
+        </div>
+        <div class="main__content">
+          <h1>About Me</h1>
+          <p>I have recently started working on my drawing/painting skills. I like to read and I write when I feel inspired enough. Currently I am stuck in an online semester and I can't wait for it to get over. </p>
+          <button class="main__btn"><a href="#sign-up">Contact</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Contact Me</h1>
+          <h2>Leave a message</h2>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="name">Name</label>
+              <input type="text" id="fname" name="firstname">
+              <label for="email">Email id</label>
+              <input type="text" id="email" name="email">
+              <label for="subject">Message</label>
+              <textarea id="message" name="message" style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <div class="main__img--container">
+            <img src="images/undraw_Texting_re_l11n.svg" alt="Contact" class="main__img--card">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <img src="images/1827363.png" alt="logo" height="60">
+          </div>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/radhika.balasubramaniam.1/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/raddiv662/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/radhika-balasubramaniam-63ab6a213/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
